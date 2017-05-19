@@ -1,0 +1,68 @@
+.preview
+{
+	transition: all 0.6s linear;
+	/*right: 20%;*/
+	left: 20%;
+	margin-top: 70px;
+	margin-bottom: 300px;
+	position: relative;
+	/*position: fixed;*/
+	min-width: 180px;
+	max-width: 200px;
+	border-radius: 1vw;
+	z-index: 1;
+}
+
+
+@media screen and (max-height: 950px)
+{
+	.photobooth
+	{
+		bottom: 100px;
+	}
+	.canvas_preview
+	{
+		top: 0;
+		display: none;
+	}
+	.canvas_preview2
+	{
+		display: block;
+		color: red;
+	}
+	.uploadbutton_webcam
+	{
+		right: 45%;
+		bottom: 225px;
+		position: absolute;
+	}
+	.no_webcam
+	{
+		position: relative;
+		bottom: 220px;
+	}
+}
+
+
+@media handheld and (max-height: 680px)
+{
+	input[type=text],
+	input[type=password]
+	{
+		height: 3vw;
+		width: 90%;
+	    padding: 0.5vw;
+	    border: 0.1vw solid rgb(0, 150, 255); 
+	    -webkit-border-radius: 1vw;
+	    border-radius: 1vw;
+	}
+	.canvas_preview
+	{
+		display: none;
+	}
+	.canvas_preview2
+	{
+		color: red;
+		display: inline;
+	}
+}

@@ -1,0 +1,1 @@
+<?php ft_location('page', 'homepage&npage=1'); ?>
